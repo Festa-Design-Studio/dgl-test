@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css" />
+    <title>Approach</title>
+</head>
+<body class="bg-black-grey-50">
+    <header>
+        <div>
+            <div class="px-4 py-6 mx-auto">
+                <div class="relative flex items-center justify-between">
+                    <!-- Logo -->
+                    <a href="index.html" aria-label="Dr. G's Lab" title="Dr. G's Lab" class="inline-flex items-center">
+                        <img class="w-64" src="/src/main/img/dgl-logo.png" alt="Dr. G's Lab">
+                    </a>
+    
+                    <!-- Desktop Menu -->
+                    <ul class="flex items-center hidden space-x-8 lg:flex">
+                        <li><a href="about.html" class="font-montserrat font-medium tracking-wide text-black-grey hover:text-primary-sunstone-orange-300 transition-colors duration-200">About</a></li>
+                        <li><a href="service.html" class="font-montserrat font-medium tracking-wide text-black-grey hover:text-primary-sunstone-orange-300 transition-colors duration-200">Services</a></li>
+                        <li><a href="project.html" class="font-montserrat font-medium tracking-wide text-black-grey hover:text-primary-sunstone-orange-300 transition-colors duration-200">Projects</a></li>
+                        <li><a href="contact.html" class="font-montserrat font-medium tracking-wide text-black-grey hover:text-primary-sunstone-orange-300 transition-colors duration-200">Contact</a></li>
+                    </ul>
+    
+                    <!-- Desktop Button -->
+                    <a href="contact.html" class="hidden lg:flex">
+                      <button type="submit" class="bg-primary-azurite-blue-600 font-montserrat text-[#ffff] px-4 py-1 rounded-lg border-b-4 border-b-primary-sunstone-orange font-medium hover:bg-primary-azurite-blue-700 transition-opacity">Book a Consultation</button>
+                    </a>
+    
+                    <!-- Mobile Menu -->
+                    <div class="lg:hidden">
+                        <!-- Hamburger Button -->
+                        <button id="" class="bg-primary-sunstone-orange p-2 rounded focus:outline-none cursor-pointer">
+                            <svg class="w-5 text-gray-600" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M23,13H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,13,23,13z"></path>
+                                <path fill="currentColor" d="M23,6H1C0.4,6,0,5.6,0,5s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,6,23,6z"></path>
+                                <path fill="currentColor" d="M23,20H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,20,23,20z"></path>
+                            </svg>
+                        </button>
+    
+                        <!-- Dropdown Menu -->
+                        <div id="" class="hidden absolute top-0 left-0 w-full bg-accent-selenite-white-100 overflow-auto ">
+                            <div class="">
+                                <div class="flex items-center justify-between mb-4">
+                                    <!-- Use the same logo from the header -->
+                                    <a href="#" aria-label="Dr. G's Lab" title="Dr. G's Lab" class="inline-flex items-center">
+                                        <img class="w-64" src="/src/main/img/dgl-logo.png" alt="Dr. G's Lab">
+                                    </a>
+                                    <!-- Close Button -->
+                                    <button id="close-btn" class="bg-primary-sunstone-orange p-2 rounded focus:outline-none">
+                                        <svg class="w-5 text-gray-600" viewBox="0 0 24 24">
+                                            <path fill="currentColor" d="M19.7,4.3c-0.4-0.4-1-0.4-1.4,0L12,10.6L5.7,4.3c-0.4-0.4-1-0.4-1.4,0s-0.4,1,0,1.4l6.3,6.3l-6.3,6.3c-0.4,0.4-0.4,1,0,1.4C4.5,19.9,4.7,20,5,20s0.5-0.1,0.7-0.3l6.3-6.3l6.3,6.3c0.2,0.2,0.5,0.3,0.7,0.3s0.5-0.1,0.7-0.3c0.4-0.4,0.4-1,0-1.4L13.4,12l6.3-6.3C20.1,5.3,20.1,4.7,19.7,4.3z"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <nav>
+                                    <ul class="space-y-4 p-4">
+                                        <li><a href="about.html" class="font-montserrat font-medium text-black-grey hover:text-primary-sunstone-orange-300">About</a></li>
+                                        <li><a href="service.html" class="font-montserrat font-medium text-black-grey hover:text-primary-sunstone-orange-300">Services</a></li>
+                                        <li><a href="project.html" class="font-montserrat font-medium text-black-grey hover:text-primary-sunstone-orange-300">Projects</a></li>
+                                        <li><a href="contact.html" class="font-montserrat font-medium text-black-grey hover:text-primary-sunstone-orange-300">Contact</a></li>
+                                    </ul>
+                                </nav>
+                                <a href="contact.html">
+                                  <button type="submit" class="bg-primary-azurite-blue-600 font-montserrat text-[#ffff] px-4 py-1 rounded-lg border-b-4 border-b-primary-sunstone-orange font-medium hover:bg-primary-azurite-blue-700 transition-opacity w-full mt-4 mb-4">Book a Consultation</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+
+<!-- Hero Section -->
+<div class="container mx-auto px-4 md:px-8 lg:px-32">
+    <div class="min-h-[400px] md:min-h-[500px] lg:min-h-[600px] bg-gradient-to-r from-chrysocolla-green to-azurite-blue flex items-center justify-center">
+        <div class="max-w-4xl text-center px-4">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-playfair font-black text-secondary-chrysocolla-green mb-6">
+                Our Trauma-Informed Design Philosophy
+            </h1>
+            <p class="text-lg md:text-xl lg:text-2xl font-montserrat text-white/90 leading-relaxed md:leading-relaxed lg:leading-relaxed">
+                At Dr. G's Lab, we believe that digital spaces should be designed with empathy, safety, and inclusivity at their core. Our trauma-informed approach shapes every aspect of our design process.
+            </p>
+        </div>
+    </div>
+</div>
+
+
+<!-- Core Principles Section -->
+<div class="mx-auto py-10 px-4 md:px-8 lg:px-32">
+    <div class="pt-10">
+        <h2 class="text-4xl md:text-5xl lg:text-5xl font-playfair text-secondary-chrysocolla-green font-black text-center mb-12">Our Principles</h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 bg-neutral-50 py-10">
+        <!-- Safety First -->
+        <div class="p-6 border rounded-md shadow-md bg-primary-sunstone-orange-100">
+            <div class="w-16 h-16 mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"><title>lock</title><g fill="#333333"><path d="M44,23V14A12,12,0,0,0,32,2h0A12,12,0,0,0,20,14v9" fill="none" stroke="#333333" stroke-linecap="square" stroke-miterlimit="10" stroke-width="1.5"></path><path d="M51,62H13a5,5,0,0,1-5-5V33a5,5,0,0,1,5-5H51a5,5,0,0,1,5,5V57A5,5,0,0,1,51,62Z" fill="none" stroke="#333333" stroke-linecap="square" stroke-miterlimit="10" stroke-width="1.5"></path><line x1="32" y1="48" x2="32" y2="54" fill="none" stroke="#333333" stroke-linecap="square" stroke-miterlimit="10" stroke-width="1.5"></line><circle cx="32" cy="42" r="6" fill="none" stroke="#333333" stroke-linecap="square" stroke-miterlimit="10" stroke-width="1.5"></circle></g></svg>
+            </div>
+            <h3 class="text-3xl md:text-3xl lg:text-3xl font-playfair font-bold mb-3 text-secondary-chrysocolla-green">Safety First</h3>
+            <p class="text-base font-montserrat text-dark-gray/80">
+                We prioritize psychological and emotional safety in every interaction, creating environments where users feel secure and supported.
+            </p>
+        </div>
+
+        <!-- User Control -->
+        <div class="p-6 border rounded-md shadow-md bg-primary-sunstone-orange-100">
+            <div class="w-16 h-16 mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"><title>light-control</title><g fill="#333333" stroke-linecap="square" stroke-linejoin="miter" stroke-miterlimit="10"><rect data-stroke="none" x="24" y="18" width="16" height="14" fill="#333333" stroke="none"></rect><circle data-stroke="none" cx="12" cy="12" r="2" fill="#333333" stroke="none"></circle><circle data-stroke="none" cx="52" cy="12" r="2" fill="#333333" stroke="none"></circle><circle data-stroke="none" cx="12" cy="52" r="2" fill="#333333" stroke="none"></circle><circle data-stroke="none" cx="52" cy="52" r="2" fill="#333333" stroke="none"></circle><rect x="5" y="5" width="54" height="54" rx="5" ry="5" fill="none" stroke="#333333" stroke-width="1.5"></rect><rect x="24" y="18" width="16" height="28" fill="none" stroke="#333333" stroke-width="1.5"></rect></g></svg>
+            </div>
+            <h3 class="text-3xl md:text-3xl lg:text-3xl font-playfair font-bold mb-3 text-secondary-chrysocolla-green">User Control</h3>
+            <p class="font-montserrat text-dark-gray/80">
+                Our designs empower users with choice and agency, allowing them to navigate experiences at their own pace.
+            </p>
+        </div>
+
+        <!-- Accessibility -->
+        <div class="p-6 border rounded-md shadow-md bg-primary-sunstone-orange-100">
+            <div class="w-16 h-16 mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"><title>screen-reader</title><g fill="#333333" stroke-linecap="square" stroke-linejoin="miter" stroke-miterlimit="10"><path d="M22,56H8a5,5,0,0,1-5-5V13A5,5,0,0,1,8,8H56a5,5,0,0,1,5,5v9" fill="none" stroke="#333333" stroke-width="1.5"></path><path d="M24,33H16a4,4,0,0,0-4,4v8a4,4,0,0,0,4,4h8L37,60V22Z" fill="none" stroke="#333333" stroke-width="1.5"></path><path d="M51,24.263a19.006,19.006,0,0,1,0,33.474" fill="none" stroke="#333333" stroke-width="1.5"></path><path d="M47.484,30.323a12.005,12.005,0,0,1,0,21.353" fill="none" stroke="#333333" stroke-width="1.5"></path><path d="M44.436,36.632a5,5,0,0,1,.014,8.728" fill="none" stroke="#333333" stroke-width="1.5"></path></g></svg>
+            </div>
+            <h3 class="text-3xl md:text-3xl lg:text-3xl font-playfair font-bold mb-3 text-secondary-chrysocolla-green">Accessibility</h3>
+            <p class="text-base font-montserrat text-dark-gray/80 leading-relaxed">
+                We ensure our digital solutions are accessible to all, following universal design principles and WCAG guidelines.
+            </p>
+        </div>
+    </div>
+</div>
+  
+
+<section>
+    <!-- Design Process Flow Section -->
+<div class="mx-auto py-10 px-4 md:px-8 lg:px-322">
+    <div class="pt-10">
+        <h2 class="text-4xl md:text-5xl lg:text-5xl font-playfair text-secondary-chrysocolla-green font-black text-center mb-12">Design Process</h2>
+    </div>
+    <div class="w-full overflow-x-auto py-12">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex justify-between items-center">
+                <!-- Process Step 1 -->
+                <div class="transition-all duration-300 hover:scale-105 text-center px-4">
+                    <div class="w-24 h-24 mx-auto bg-chrysocolla-green rounded-full flex items-center justify-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"><title>ecology</title><g fill="#333333" stroke-linecap="square" stroke-linejoin="miter" stroke-miterlimit="10"><path d="M15.377,8.234c1.829,1.352,3.234,4.79,3.234,4.79a6.253,6.253,0,0,1,2.074,2.5,6.881,6.881,0,0,1,.027,3.3s1.4,4.112.742,5.266-3.461,1.894-3.461,1.894a5.4,5.4,0,0,1-3.543,2.554A3.32,3.32,0,0,0,11.319,32c0,2.225,2.224,5.849,2.224,5.849S15.85,38.977,16.18,39.8a12.585,12.585,0,0,1,.441,2.743s2.2,3.873.959,6.1c-.394.71-2.224,1.236-2.224,1.236L12.79,53.727" fill="none" stroke="#333333" stroke-width="1.5" stroke-linecap="butt"></path><path d="M54.887,14.188a47.05,47.05,0,0,1-7.694,2.461s-3.577,3.982-5.925,3.652-4.737-2.965-4.737-2.965.164-4.861-.577-5.108S33.235,13.3,32,12.31s-.523-3.775-.523-3.775-2.69-.838-3.02-1.745.979-2.924,1.229-3.7" fill="none" stroke="#333333" stroke-width="1.5" stroke-linecap="butt"></path><path d="M53,41C39,46,43,61,31,61" fill="none" stroke="#333333" stroke-width="1.5"></path><path d="M45.806,29.01l.09-.191a20.768,20.768,0,0,0-5-1.02,15.012,15.012,0,0,0-2.856-1.4c-.989-.247-4.23.824-4.23.824S29.858,32,29.858,33.812c0,.741,1.425,1.889,2.469,2.922" fill="none" stroke="#333333" stroke-width="1.5"></path><path d="M62,28.1A21.938,21.938,0,0,1,46,35a10,10,0,0,0,0,20A16,16,0,0,0,62,39Z" fill="none" stroke="#333333" stroke-width="1.5"></path><path d="M59.086,21.637A29,29,0,1,0,24,59.872" fill="none" stroke="#333333" stroke-width="1.5"></path></g></svg>
+                    </div>
+                    <h3 class="text-2xl md:text-2xl lg:text-2xl font-playfair font-medium  text-secondary-chrysocolla-green mb-2">Research & Understanding</h3>
+                </div>
+
+                <!-- Process Step 2 -->
+                <div class="transition-all duration-300 hover:scale-105 text-center px-4">
+                    <div class="w-24 h-24 mx-auto bg-chrysocolla-green rounded-full flex items-center justify-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"><title>c-pulse</title><g fill="#333333" stroke-linecap="square" stroke-linejoin="miter" stroke-miterlimit="10"><polyline points="9 32 17 32 24 16 40 48 47 32 55 32" fill="none" stroke="#333333" stroke-width="1.5"></polyline><circle cx="32" cy="32" r="29" fill="none" stroke="#333333" stroke-width="1.5"></circle></g></svg>
+                    </div>
+                    <h3 class="text-2xl md:text-2xl lg:text-2xl font-playfair font-medium  text-secondary-chrysocolla-green mb-2">Safety Analysis</h3>
+                </div>
+
+                <!-- Process Step 3 -->
+                <div class="transition-all duration-300 hover:scale-105 text-center px-4">
+                    <div class="w-24 h-24 mx-auto bg-chrysocolla-green rounded-full flex items-center justify-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"><title>users-mm</title><g fill="#333333" stroke-linecap="square" stroke-linejoin="miter" stroke-miterlimit="10"><path d="M39.486,45.994,28.1,41.438a2,2,0,0,1-1.241-1.609l-.468-3.744A11,11,0,0,0,33,26V16.725a6,6,0,0,0-6-6L25.447,7.618a1.159,1.159,0,0,0-1.387-.557L16.654,9.705A9.154,9.154,0,0,0,11,17.728V26a11,11,0,0,0,6.614,10.085l-.468,3.744a2,2,0,0,1-1.241,1.609L4.514,45.994A4,4,0,0,0,2,49.708V57H42V49.708A4,4,0,0,0,39.486,45.994Z" fill="none" stroke="#333333" stroke-width="1.5"></path> <path d="M48,57H62V47.708a4,4,0,0,0-2.514-3.714L48.1,39.438a2,2,0,0,1-1.241-1.609l-.468-3.744A11,11,0,0,0,53,24V14.725a6,6,0,0,0-6-6L45.447,5.618a1.159,1.159,0,0,0-1.387-.557L36.654,7.705a6.612,6.612,0,0,0-.7.295" fill="none" stroke="#333333" stroke-width="1.5"></path></g></svg>
+                    </div>
+                    <h3 class="text-2xl md:text-2xl lg:text-2xl font-playfair font-medium  text-secondary-chrysocolla-green mb-2">User-Centered Design</h3>
+                </div>
+
+                <!-- Process Step 4 -->
+                <div class="transition-all duration-300 hover:scale-105 text-center px-4">
+                    <div class="w-24 h-24 mx-auto bg-chrysocolla-green rounded-full flex items-center justify-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"><title>attachment</title><g fill="#333333" stroke-linecap="square" stroke-linejoin="miter" stroke-miterlimit="10"><path d="M48,15v30c0,8.8-7.2,16-16,16h0c-8.8,0-16-7.2-16-16V14c0-6.1,4.9-11,11-11h0c6.1,0,11,4.9,11,11v29c0,3.3-2.7,6-6,6h0c-3.3,0-6-2.7-6-6V15" fill="none" stroke="#333333" stroke-width="1.5"></path></g></svg>
+                    </div>
+                    <h3 class="text-2xl md:text-2xl lg:text-2xl font-playfair font-medium  text-secondary-chrysocolla-green mb-2">Inclusive Implementation</h3>
+                </div>
+
+                <!-- Process Step 5 -->
+                <div class="transition-all duration-300 hover:scale-105 text-center px-4">
+                    <div class="w-24 h-24 mx-auto bg-chrysocolla-green rounded-full flex items-center justify-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"><title>compare-items</title><g fill="#333333" stroke-linecap="square" stroke-linejoin="miter" stroke-miterlimit="10"><rect x="4" y="8" width="24" height="48" rx="4" fill="none" stroke="#333333" stroke-width="1.5" stroke-linecap="butt"></rect><line x1="50" y1="8" x2="46" y2="8" fill="none" stroke="#333333" stroke-width="1.5"></line><line x1="36" y1="24" x2="36" y2="20" fill="none" stroke="#333333" stroke-width="1.5"></line><line x1="36" y1="34" x2="36" y2="30" fill="none" stroke="#333333" stroke-width="1.5"></line><line x1="36" y1="44" x2="36" y2="40" fill="none" stroke="#333333" stroke-width="1.5"></line><line x1="60" y1="24" x2="60" y2="20" fill="none" stroke="#333333" stroke-width="1.5"></line><line x1="60" y1="34" x2="60" y2="30" fill="none" stroke="#333333" stroke-width="1.5"></line><line x1="60" y1="44" x2="60" y2="40" fill="none" stroke="#333333" stroke-width="1.5"></line><line x1="50" y1="56" x2="46" y2="56" fill="none" stroke="#333333" stroke-width="1.5"></line><path d="M40,8a4,4,0,0,0-4,4v2" fill="none" stroke="#333333" stroke-width="1.5"></path><path d="M56,8a4,4,0,0,1,4,4v2" fill="none" stroke="#333333" stroke-width="1.5"></path><path d="M56,56a4,4,0,0,0,4-4V50" fill="none" stroke="#333333" stroke-width="1.5"></path><path d="M40,56a4,4,0,0,1-4-4V50" fill="none" stroke="#333333" stroke-width="1.5"></path></g></svg>
+                    </div>
+                    <h3 class="text-2xl md:text-2xl lg:text-2xl font-playfair font-medium  text-secondary-chrysocolla-green mb-2">Testing & Validation</h3>
+                </div>
+
+                <!-- Process Step 6 -->
+                <div class="transition-all duration-300 hover:scale-105 text-center px-4">
+                    <div class="w-24 h-24 mx-auto bg-chrysocolla-green rounded-full flex items-center justify-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"><title>repeat</title><g fill="#333333" stroke-linecap="square" stroke-linejoin="miter" stroke-miterlimit="10"><circle cx="32" cy="32" r="7" fill="none" stroke="#333333" stroke-width="1.5"></circle><path d="M58.98,21.345A29,29,0,0,0,3,32" fill="none" stroke="#333333" stroke-width="1.5" stroke-linecap="butt"></path><polyline points="57.978 4.959 59 21.351 43.311 15.897" fill="none" stroke="#333333" stroke-width="1.5"></polyline><path id="butt-2" d="M5.02,42.655A29,29,0,0,0,61,32" fill="none" stroke="#333333" stroke-width="1.5"></path><polyline points="6.022 59.041 5 42.649 20.689 48.103" fill="none" stroke="#333333" stroke-width="1.5"></polyline></g></svg>
+                    </div>
+                    <h3 class="text-2xl md:text-2xl lg:text-2xl font-playfair font-medium  text-secondary-chrysocolla-green mb-2">Continuous Improvement</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+
+<!-- Implementation Framework Section -->
+<div class="mx-auto px-4 md:px-8 lg:px-32 py-16">
+    <h2 class="text-3xl md:text-5xl lg:text-5xl font-playfair text-secondary-chrysocolla-green font-black text-center mb-12">Implementation Framework</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+        <!-- Research & Understanding -->
+        <div class="border p-6 rounded-md shadow-md bg-secondary-chrysocolla-green-100">
+            <div class="mb-4">
+                <h3 class="text-2xl md:text-2xl lg:text-2xl font-playfair font-bold  text-secondary-chrysocolla-green mb-4">Research & Understanding</h3>
+                <ul class="list-disc list-inside text-dark-gray/80 font-montserrat">
+                    <li class="mb-2">Conduct thorough user research</li>
+                    <li class="mb-2">Identify potential triggers</li>
+                    <li class="mb-2">Map user journeys</li>
+                    <li>Gather stakeholder input</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Safety Analysis -->
+        <div class="border p-6 rounded-md shadow-md bg-secondary-chrysocolla-green-100">
+            <div class="mb-4">
+                <h3 class="text-2xl md:text-2xl lg:text-2xl font-playfair font-bold  text-secondary-chrysocolla-green mb-4">Safety Analysis</h3>
+                <ul class="list-disc list-inside text-dark-gray/80 font-montserrat">
+                    <li class="mb-2">Assess psychological safety needs</li>
+                    <li class="mb-2">Evaluate potential risks</li>
+                    <li class="mb-2">Develop mitigation strategies</li>
+                    <li>Create safety guidelines</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- User-Centered Design -->
+        <div class="border p-6 rounded-md shadow-md bg-secondary-chrysocolla-green-100">
+            <div class="mb-4">
+                <h3 class="text-2xl md:text-2xl lg:text-2xl font-playfair font-bold  text-secondary-chrysocolla-green mb-4">User-Centered Design</h3>
+                <ul class="list-disc list-inside text-dark-gray/80 font-montserrat">
+                    <li class="mb-2">Incorporate user feedback</li>
+                    <li class="mb-2">Design for agency and control</li>
+                    <li class="mb-2">Create clear navigation paths</li>
+                    <li>Implement content warnings</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Inclusive Implementation -->
+        <div class="border p-6 rounded-md shadow-md bg-secondary-chrysocolla-green-100">
+            <div class="mb-4">
+                <h3 class="text-2xl md:text-2xl lg:text-2xl font-playfair font-bold  text-secondary-chrysocolla-green mb-4">Inclusive Implementation</h3>
+                <ul class="list-disc list-inside text-dark-gray/80 font-montserrat">
+                    <li class="mb-2">Follow accessibility standards</li>
+                    <li class="mb-2">Use inclusive language</li>
+                    <li class="mb-2">Provide multiple interaction options</li>
+                    <li>Create diverse representations</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Impact Measurement Section -->
+<div class="mx-auto px-4 md:px-8 lg:px-32 py-16 mb-16">
+    <h2 class="text-4xl md:text-5xl lg:text-5xl font-playfair text-secondary-chrysocolla-green font-black text-center mb-12">Impact Measurement</h2>
+    <div class="overflow-x-auto">
+        <table class="w-full border-collapse">
+            <thead>
+                <tr class="bg-chrysocolla-green/10">
+                    <th class="border border-gray-200 px-6 py-4 text-left text-2xl md:text-2xl lg:text-2xl font-playfair font-bold  text-secondary-chrysocolla-green bg-primary-sunstone-orange-200">Metric</th>
+                    <th class="border border-gray-200 px-6 py-4 text-left text-2xl md:text-2xl lg:text-2xl font-playfair font-bold  text-secondary-chrysocolla-green bg-primary-azurite-blue-200">Measurement Method</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="hover:bg-gray-50">
+                    <td class="border border-gray-200 px-6 py-4 font-montserrat bg-primary-sunstone-orange-100">User Safety</td>
+                    <td class="border border-gray-200 px-6 py-4 font-montserrat bg-primary-azurite-blue-100">Safety perception surveys</td>
+                </tr>
+                <tr class="hover:bg-gray-50">
+                    <td class="border border-gray-200 px-6 py-4 font-montserrat bg-primary-sunstone-orange-100">Accessibility</td>
+                    <td class="border border-gray-200 px-6 py-4 font-montserrat bg-primary-azurite-blue-100">WCAG compliance checks</td>
+                </tr>
+                <tr class="hover:bg-gray-50">
+                    <td class="border border-gray-200 px-6 py-4 font-montserrat bg-primary-sunstone-orange-100">User Satisfaction</td>
+                    <td class="border border-gray-200 px-6 py-4 font-montserrat bg-primary-azurite-blue-100">Feedback analysis</td>
+                </tr>
+                <tr class="hover:bg-gray-50">
+                    <td class="border border-gray-200 px-6 py-4 font-montserrat bg-primary-sunstone-orange-100">Engagement</td>
+                    <td class="border border-gray-200 px-6 py-4 font-montserrat bg-primary-azurite-blue-100">Interaction metrics</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+
+
+<section class="bg-blue-600 px-4 py-8 md:px-4 md:py-28 lg:px-8 lg:py-28 bg-primary-azurite-blue-200">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-4xl md:text-5xl lg:text-5xl font-playfair text-secondary-chrysocolla-green font-black mb-4">Ready to Get Started?</h2>
+      <p class="font-montserrat text-lg md:text-xl lg:text-xl mb-8 leading-relaxed md:leading-relaxed lg:leading-relaxed">Let's create inclusive digital experiences together</p>
+      <a href="contact.html">
+        <button class="bg-primary-azurite-blue-600 font-montserrat text-xl text-blue-600 px-12 py-4 rounded-lg border-b-4 border-b-primary-sunstone-orange font-medium hover:bg-primary-azurite-blue-700 transition text-[#ffff]">
+            Schedule a Consultation
+          </button>
+      </a>
+    </div>
+  </section>
+
+
+  <!-- Footer section --> 
+  <footer class="py-16 px-5 bg-accent-selenite-white-200">
+    <div class="mx-auto">
+      
+      <!-- Main Footer Content -->
+       <div class="flex flex-col md:flex-row gap-16 justify-between">
+          
+        <!-- Logo & Slogan Column -->
+          <div class="md:w-3/12">
+            <a href="index.html">
+              <img src="img/DGL-logo-mark.svg" alt="Logo" class="w-24 mb-4"/>
+            </a>
+              <p class="font-montserrat opacity-80 mb-4 text-black-grey">Pioneering trauma-informed design to create compassionate, inclusive digital experiences that drive positive change.</p>
+              <a href="contact.html">
+                <button type="submit" class="bg-primary-azurite-blue-600 font-montserrat text-[#ffff] px-4 py-1 rounded-lg border-b-4 border-b-primary-sunstone-orange font-medium hover:bg-primary-azurite-blue-700 transition-opacity">Book a Consultation</button>
+              </a>
+          </div>
+
+          <!-- Quick Links Column -->
+          <div class="grid md:grid-cols-2 sm:grid-cols-1 lg:grid-cols-3 gap-9">
+            <div>
+                <h3 class="font-playfair font-bold text-2xl mb-6 text-black-grey">Services</h3>
+                <ul class="space-y-3 text-black-grey font-medium opacity-90">
+                    <li><a href="uxresearch.html" class="font-montserrat hover:opacity-80 hover:text-primary-sunstone-orange">UX Research</a></li>
+                    <li><a href="nonprofit.html" class="font-montserrat hover:opacity-80 hover:text-primary-sunstone-orange">UX Strategy</a></li>
+                    <li><a href="nonprofit.html" class="font-montserrat hover:opacity-80 hover:text-primary-sunstone-orange">UX / UI Design</a></li>
+                    <li><a href="nonprofit.html" class="font-montserrat hover:opacity-80 hover:text-primary-sunstone-orange">Digital Products</a></li>
+                </ul>
+            </div>
+            <div>
+              <h3 class="font-playfair font-bold text-2xl mb-6 text-black-grey">Industry</h3>
+              <ul class="space-y-3 text-black-grey font-medium opacity-90">
+                  <li><a href="nonprofit.html" class="font-montserrat hover:opacity-80 hover:text-primary-sunstone-orange">Nonprofit</a></li>
+                  <li><a href="nonprofit.html" class="font-montserrat hover:opacity-80 hover:text-primary-sunstone-orange">Startup</a></li>
+                  <li><a href="nonprofit.html" class="font-montserrat hover:opacity-80 hover:text-primary-sunstone-orange">Institution</a></li>
+              </ul>
+            </div>
+            <div>
+                <h3 class="font-playfair font-bold text-2xl mb-6 text-black-grey">Resources</h3>
+                <ul class="space-y-3 text-black-grey font-medium opacity-90">
+                  <li><a href="#" class="font-montserrat hover:opacity-80 hover:text-primary-sunstone-orange">Blog</a></li>
+                  <li><a href="#" class="font-montserrat hover:opacity-80 hover:text-primary-sunstone-orange">Podcast</a></li>
+                  <li><a href="#" class="font-montserrat hover:opacity-80 hover:text-primary-sunstone-orange">Ebook</a></li>
+                  <li><a href="#" class="font-montserrat hover:opacity-80 hover:text-primary-sunstone-orange">FAQ</a></li>
+                </ul>
+            </div>
+            
+        </div>
+
+          <!-- Newsletter Column -->
+
+          <div class="w-full md:w-1/4">
+            <h3 class="font-playfair font-bold text-2xl text-black-grey">Subscribe to our newsletter</h3>
+              <p class="font-montserrat mt-2 opacity-80 text-black-grey">Stay updated on the latest in ethical design and trauma-informed practices. Join our newsletter community.</p>
+                <form class="mb-6 mt-3">
+                  <div class="flex flex-col space-y-2">
+                    <input type="email" placeholder="Enter your email" class="bg-primary-sunstone-orange-00 font-montserrat font-medium text-[#162a36] border-2 border-primary-sunstone-orange-400 hover:border-primary-sunstone-orange-300  px-4 py-1 rounded-lg focus:outline-none"/>
+                      <button type="submit" class="bg-primary-sunstone-orange hover:bg-primary-sunstone-orange-400 text-[#ffff] px-4 py-1 rounded-lg font-medium font-montserrat transition-opacity">Subscribe
+                      </button>
+                  </div>
+              </form>
+            </div>
+       </div>
+
+       <div class="flex flex-col md:flex-row justify-between mt-10 pt-8  border-t border-primary-sunstone-orange">
+        <div class="space-y-4 mb-5">
+            <h3 class="font-playfair font-bold text-2xl text-black-grey">Connect with us online</h3>
+              <!-- Navigation Footer Social Icons -->
+                <div class="flex space-x-4">
+                    <a href="#" class="text-primary-sunstone-orange hover:text-primary-sunstone-orange-400">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    </a>
+                    <a href="#" class="text-primary-sunstone-orange hover:text-primary-sunstone-orange-400">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                    </a>
+                    <a href="#" class="text-primary-sunstone-orange hover:text-primary-sunstone-orange-400">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg>
+                    </a>
+              </div>
+        </div>
+        <!-- Legal Text -->
+       
+        <div class="space-y-3 md:space-y-0 md:space-x-6">
+          <p class="font-playfair font-bold text-[24px] text-black-grey">© 2024 Dr. G's Lab, LLC.</p>
+          <div class="flex flex-col md:flex-row md:space-x-6 space-y-3 md:space-y-0 font-montserrat">
+            
+            <a href="#" class="font-montserrat font-medium text-black-grey opacity-60 hover:text-primary-sunstone-orange">Privacy</a>
+            <a href="#" class="font-montserrat font-medium text-black-grey opacity-60 hover:text-primary-sunstone-orange">Terms</a>
+            <a href="#" class="font-montserrat font-medium text-black-grey opacity-60 hover:text-primary-sunstone-orange">Sitemap</a>
+          </div>
+        </div>
+       
+    </div>
+
+
+    </div>
+  </footer>
+  
+   <!-- Link to JavaScript -->
+</body>
+</html>
