@@ -3,18 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css" />
-    <title>Dr. G's Lab | Trauma-Informed UX Design</title>
-    <meta name="description" content="Expert trauma-informed UX design services for mission-driven organizations. Create safe, inclusive digital spaces that empower your community.">
+    <link rel="stylesheet" href="../style.css" />
+    <title>Component development</title>
 </head>
-<body class="bg-black-grey-50">
+<body class="bg-accent-selenite-white-100">
   <header>
     <div>
         <div class="px-4 py-6 mx-auto">
             <div class="relative flex items-center justify-between">
                 <!-- Logo -->
                 <a href="index.html" aria-label="Dr. G's Lab" title="Dr. G's Lab" class="inline-flex items-center">
-                    <img class="w-64" src="/main/img/dgl-logo.png" alt="Dr. G's Lab">
+                    <img class="w-64" src="/src/main/img/dgl-logo.png" alt="Dr. G's Lab">
                 </a>
 
                 <!-- Desktop Menu -->
@@ -74,26 +73,31 @@
         </div>
     </div>
 </header>
-
-  <section class="mx-auto px-4 py-16 md:px-4 md:py-28 lg:px-8 lg:py-28">
-    <div class="">
-        <div class="grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12 gap-9 items-center">
-            <!-- Hero content -->
-            <div class="col-span-4 md:col-span-4 lg:col-span-6">
-                <div class="space-y-4">
-                    <h1 class="font-playfair font-black text-4xl md:text-5xl lg:text-6xl text-secondary-chrysocolla-green">Transforming digital experiences through Trauma-informed design</h1>
-                  <p class="font-montserrat font-medium text-xl md:text-2xl lg:text-2xl text-secondary-rhodochrosite-rose-500">
-                    Empowering organizations and institutions to create inclusive, healing-centered digital solutions.
-                  </p>
-                  <div class="pt-2">
-                    <a href="about.html">
-                      <button class="border-2 border-primary-sunstone-orange bg-primary-sunstone-orange-100 hover:bg-primary-sunstone-orange-200 px-5 py-1 rounded-lg font-montserrat font-medium text-black-grey">Explore our mission</button>
-                    </a>
-                  </div>
-                </div>
+  
+  <main class="py-6 px-5">
+    
+    
+    <!-- Hero Content -->
+    <section class="py-20 px-2 md:px-2">
+      <div class="mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
+          <!-- Left Column -->
+          <div class="space-y-4">
+            <h1 class="font-playfair font-black text-4xl md:text-5xl lg:text-6xl text-secondary-chrysocolla-green">
+              Transforming digital experiences through Trauma-informed design
+            </h1>
+            <p class="font-montserrat font-medium text-xl md:text-2xl text-secondary-rhodochrosite-rose-500">
+              Empowering organizations and institutions to create inclusive, healing-centered digital solutions that drive measurable social impact.
+            </p>
+            <div class="pt-2">
+              <a href="about.html">
+                <button class="border-2 border-primary-sunstone-orange bg-primary-sunstone-orange-100 hover:bg-primary-sunstone-orange-200 px-5 py-1 rounded-lg font-montserrat font-medium text-black-grey">Explore our mission</button>
+              </a>
             </div>
-            <!-- Right Column -->
-          <div class="relative aspect-video w-full col-span-4 md:col-span-4 lg:col-span-6">
+          </div>
+          
+          <!-- Right Column -->
+          <div class="relative aspect-video w-full">
             <div class="w-full h-full rounded-lg overflow-hidden">
               <video
                 class="w-full h-full object-cover rounded-xl"
@@ -107,200 +111,228 @@
               </video>
             </div>
           </div>
-
-            
         </div>
-    </div>
-  </section>
+      </div>
+    </section>
+    
+  
 
-  <section class="px-4 py-16 md:px-4 md:py-28 lg:px-8 lg:py-28 bg-primary-azurite-blue-100">
-    <div class="mx-auto">
+    <section class="py-20 px-2 md:px-2">
+      <div class="mx-auto">
+        <!-- Header -->
+        <div class="max-w-3xl mb-16 space-y-4">
+          <h2 class="font-playfair font-black text-4xl md:text-5xl lg:text-5xl text-secondary-chrysocolla-green">
+            How we transform digital experiences
+          </h2>
+          <p class="font-montserrat font-medium text-xl md:text-2xl text-secondary-rhodochrosite-rose-500">
+            At Dr. G's Lab, we specialize in creating digital solutions that prioritize user wellbeing and accessibility through our comprehensive suite of services.
+          </p>
+          <div class="pt-2">
+            <a>
+              <button class="border-2 border-primary-sunstone-orange bg-primary-sunstone-orange-100 hover:bg-primary-sunstone-orange-200 px-5 py-1 rounded-lg font-montserrat font-medium text-black-grey">
+                Explore our services
+              </button>
+            </a>
+          </div>
+        </div>
+
+         <!-- Services Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="col-auto p-6 bg-primary-azurite-blue-200 rounded-lg shadow-sm">
+            <div class="w-20 h-20 mb-8">
+              <img class="w-60" src="img/services/ux-research-strategy-design-icon.svg" alt="UX research and strategy design icon">
+            </div> 
+            <h3 class="font-playfair font-bold text-3xl md:text-4xl mb-6 text-primary-azurite-blue-700">UX research & strategy design</h3>
+            <p class="font-montserrat text-lg md:text-xl text-black-grey">Uncovering deep insights through trauma-informed research to create more inclusive, healing-centered digital spaces.</p>
+          </div>
+          <div class="col-auto p-6 bg-primary-azurite-blue-200 rounded-lg shadow-sm">
+            <div class="w-20 h-20 mb-8 text-blue-600">
+              <img src="img/services/accessible-ui-design-icon.svg" alt="Accessible user interface design solutions icon">
+            </div>
+            <h3 class="font-playfair font-bold text-3xl md:text-4xl mb-6 text-primary-azurite-blue-700">Accessible UI design solutions</h3>
+            <p class="font-montserrat text-lg md:text-xl text-black-grey">Building empathetic, user-centered interfaces that prioritize psychological safety and emotional wellbeing.</p>
+          </div>
+          <div class="col-auto p-6 bg-primary-azurite-blue-200 rounded-lg shadow-sm">
+            <div class="w-20 h-20 mb-8 text-blue-600">
+              <img src="img/services/digital-product-design-icon.svg" alt="Digital product design and development icon">
+            </div>
+            <h3 class="font-playfair font-bold text-3xl md:text-4xl mb-6 text-primary-azurite-blue-700">Digital Product design & development</h3>
+            <p class="font-montserrat text-lg md:text-xl text-black-grey">Crafting innovative solutions that combine trauma-informed principles with human-centered design practices.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20 px-2 md:px-2">
+      <div class="mx-auto">
+        <!-- Header -->
+        <div class="max-w-3xl mb-16 space-y-4">
+          <h2 class="font-playfair font-black text-4xl md:text-5xl lg:text-5xl text-secondary-chrysocolla-green">
+            Transformative impact stories
+          </h2>
+          <p class="font-montserrat font-medium text-xl md:text-2xl text-secondary-rhodochrosite-rose-500">
+            Discover how we've helped organizations create meaningful impact through ethical, user-centered design that prioritizes psychological safety and emotional wellbeing.
+          </p>
+          <div class="pt-2">
+            <a>
+              <button class="border-2 border-primary-sunstone-orange bg-primary-sunstone-orange-100 hover:bg-primary-sunstone-orange-200 px-5 py-1 rounded-lg font-montserrat font-medium text-black-grey">
+                Explore our projects
+              </button>
+            </a>
+          </div>
+        </div>
+    
+        <!-- Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+          <!-- Story 1 -->
+          <div class="rounded-xl p-8 bg-primary-azurite-blue-200">
+            <div class="mb-6">
+              <img src="img/project-2.jpg" alt="Healing-centered design icon" class="w-full h-full rounded-lg"/>
+            </div>
+            <h3 class="font-playfair font-bold text-3xl md:text-4xl mb-6 text-primary-azurite-blue-700">
+              App Development with High Schoolers
+            </h3>
+            <p class="font-montserrat text-lg md:text-xl text-black-grey mb-6">
+              In partnership with Peak Education, Dr. G and team conducted user-centered research to gain insights into an app dedicated to connecting high school students to college students for real advice on the college experience.
+            </p>
+            <div>
+              <a>
+                <button class="border-2 border-primary-sunstone-orange bg-primary-sunstone-orange-100 hover:bg-primary-sunstone-orange-200 px-5 py-1 rounded-lg font-montserrat font-medium text-black-grey">
+                  View project
+                </button>
+              </a>
+            </div>
+          </div>
+
+          
+    
+          <!-- Story 2 -->
+          <div class="rounded-xl p-8 bg-primary-azurite-blue-200">
+            <div class="mb-6">
+              <img src="img/project-1.jpg" alt="Inclusive design icon" class="w-full h-full rounded-lg"/>
+            </div>
+            <h3 class="font-playfair font-bold text-3xl md:text-4xl mb-6 text-primary-azurite-blue-700">
+              Trauma-Informed Content for Multicultural App
+            </h3>
+            <p class="font-montserrat text-lg md:text-xl text-black-grey mb-6">
+              Dr. G contributed content about adverse childhood experiences (ACEs) and the Domains of Wellness to Samahra, an app developed for parents of multicultural children.
+            </p>
+            <div>
+              <a>
+                <button class="border-2 border-primary-sunstone-orange bg-primary-sunstone-orange-100 hover:bg-primary-sunstone-orange-200 px-5 py-1 rounded-lg font-montserrat font-medium text-black-grey">
+                  View project
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="relative md:h-[500px] lg:h-[700px] h-[500px] px-4 py-6">
+      <!-- Background Video -->
+      <video autoplay loop muted playsinline class="absolute inset-0 object-cover w-full h-full opacity-50">
+        <source src="/src/main/img/7-tips-ux-portfolio copy.mp4" type="video/mp4">
+        <!-- Fallback image for browsers that don't support video -->
+        <img src="/src/main/img/book-a-consultation.jpg" alt="Team workspace" class="absolute inset-0 object-cover w-full h-full">
+      </video>
       
-      <!-- Header -->
-      <div class="max-w-3xl mb-16 space-y-4">
-        <h2 class="font-playfair font-black text-4xl md:text-5xl lg:text-5xl text-secondary-chrysocolla-green">
-          Transformative impact stories
-        </h2>
-        <p class="font-montserrat font-medium text-xl md:text-2xl text-secondary-rhodochrosite-rose-500">
-          Discover how we've helped organizations create meaningful impact through ethical, user-centered design that prioritizes psychological safety and emotional wellbeing.
-        </p>
-        <div class="pt-2">
-          <a href="project.html">
-            <button class="border-2 border-primary-sunstone-orange bg-primary-sunstone-orange-100 hover:bg-primary-sunstone-orange-200 px-5 py-1 rounded-lg font-montserrat font-medium text-black-grey">
-              Explore our projects
-            </button>
-          </a>
-        </div>
-      </div>
-  
-      <!-- Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
-        <!-- Story 1 -->
-        <div class="rounded-xl p-8 bg-primary-azurite-blue-200">
-          <div class="mb-6">
-            <img src="img/project-2.jpg" alt="Healing-centered design icon" class="w-full h-full rounded-lg"/>
+      <!-- Content Wrapper -->
+      <div class="relative z-10 flex items-center h-full">
+          <div class="mx-auto max-w-screen-lg">
+              <div class="flex p-5 flex-col">
+                <div class="space-y-6">
+                  <h1 class="text-4xl md:text-5xl lg:text-6xl text-secondary-chrysocolla-green font-playfair font-black">
+                    Transforming Digital Spaces Through Trauma-Informed Design
+                  </h1>
+                  <p class="font-montserrat font-medium text-xl md:text-2xl text-secondary-rhodochrosite-rose-500">
+                    At Dr. G's Lab, we believe in the power of design to heal, empower, and create positive change. As pioneers in trauma-informed digital experiences, we partner with nonprofits, startups, and institutions to build inclusive, accessible, and psychologically safe digital spaces.
+                  </p>
+                </div>
+              </div>
           </div>
-          <h3 class="font-playfair font-bold text-3xl md:text-4xl mb-6 text-primary-azurite-blue-700">
-            App Development with High Schoolers
-          </h3>
-          <p class="font-montserrat text-lg md:text-xl text-black-grey mb-6 leading-relaxed md:leading-relaxed lg:leading-relaxed">
-            In partnership with Peak Education, Dr. G and team conducted user-centered research to gain insights into an app dedicated to connecting high school students to college students for real advice on the college experience.
+      </div>
+    </section>
+
+
+    <!-- testimonial -->
+    <section class="py-20 px-2 md:px-2">
+      <div class=" mx-auto ">
+        <!-- Section Header -->
+        <div class="text-center mb-16">
+          <h2 class="font-playfair font-black text-4xl md:text-5xl lg:text-5xl text-secondary-chrysocolla-green mb-4">Our Partners' Experiences</h2>
+          <p class="font-montserrat font-medium text-xl md:text-2xl text-secondary-rhodochrosite-rose-500 max-w-3xl mx-auto">
+            Hear from clients who've experienced the transformative power of trauma-informed design
           </p>
-          <div>
-            <a>
-              <button class="border-2 border-primary-sunstone-orange bg-primary-sunstone-orange-100 hover:bg-primary-sunstone-orange-200 px-5 py-1 rounded-lg font-montserrat font-medium text-black-grey">
-                View project
-              </button>
-            </a>
-          </div>
         </div>
-
-        
-  
-        <!-- Story 2 -->
-        <div class="rounded-xl p-8 bg-primary-azurite-blue-200">
-          <div class="mb-6">
-            <img src="img/project-1.jpg" alt="Inclusive design icon" class="w-full h-full rounded-lg"/>
-          </div>
-          <h3 class="font-playfair font-bold text-3xl md:text-4xl mb-6 text-primary-azurite-blue-700">
-            Trauma-Informed Content for Multicultural App
-          </h3>
-          <p class="font-montserrat text-lg md:text-xl text-black-grey mb-6 leading-relaxed md:leading-relaxed lg:leading-relaxed">
-            Dr. G contributed content about adverse childhood experiences (ACEs) and the Domains of Wellness to Samahra, an app developed for parents of multicultural children.
-          </p>
-          <div>
-            <a>
-              <button class="border-2 border-primary-sunstone-orange bg-primary-sunstone-orange-100 hover:bg-primary-sunstone-orange-200 px-5 py-1 rounded-lg font-montserrat font-medium text-black-grey">
-                View project
-              </button>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="px-4 py-16 md:px-4 md:py-28 lg:px-8 lg:py-28 bg-primary-sunstone-orange-50">
-    <div class="mx-auto">
-      <!-- Header -->
-      <div class="max-w-3xl mb-16 space-y-4">
-        <h2 class="font-playfair font-black text-4xl md:text-5xl lg:text-5xl text-secondary-chrysocolla-green">
-          How we transform digital experiences
-        </h2>
-        <p class="font-montserrat font-medium text-xl md:text-2xl text-secondary-rhodochrosite-rose-500">
-          At Dr. G's Lab, we specialize in creating digital solutions that prioritize user wellbeing and accessibility through our comprehensive suite of services.
-        </p>
-        <div class="pt-2">
-          <a href="service.html">
-            <button class="border-2 border-primary-sunstone-orange bg-primary-sunstone-orange-100 hover:bg-primary-sunstone-orange-200 px-5 py-1 rounded-lg font-montserrat font-medium text-black-grey">
-              Explore our services
-            </button>
-          </a>
-        </div>
-      </div>
-
-       <!-- Services Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div class="col-auto p-6 bg-primary-sunstone-orange-100 rounded-lg shadow-sm">
-          <div class="w-20 h-20 mb-8">
-            <img class="w-60" src="img/services/ux-research-strategy-design-icon.svg" alt="UX research and strategy design icon">
-          </div> 
-          <h3 class="font-playfair font-bold text-3xl md:text-4xl mb-6 text-primary-azurite-blue-700">UX research & strategy design</h3>
-          <p class="font-montserrat text-lg md:text-xl text-black-grey leading-relaxed md:leading-relaxed lg:leading-relaxed">Uncovering deep insights through trauma-informed research to create more inclusive, healing-centered digital spaces.</p>
-        </div>
-        <div class="col-auto p-6 bg-primary-sunstone-orange-100 rounded-lg shadow-sm">
-          <div class="w-20 h-20 mb-8 text-blue-600">
-            <img src="img/services/accessible-ui-design-icon.svg" alt="Accessible user interface design solutions icon">
-          </div>
-          <h3 class="font-playfair font-bold text-3xl md:text-4xl mb-6 text-primary-azurite-blue-700">Accessible UI design solutions</h3>
-          <p class="font-montserrat text-lg md:text-xl text-black-grey leading-relaxed md:leading-relaxed lg:leading-relaxed">Building empathetic, user-centered interfaces that prioritize psychological safety and emotional wellbeing.</p>
-        </div>
-        <div class="col-auto p-6 bg-primary-sunstone-orange-100 rounded-lg shadow-sm">
-          <div class="w-20 h-20 mb-8 text-blue-600">
-            <img src="img/services/digital-product-design-icon.svg" alt="Digital product design and development icon">
-          </div>
-          <h3 class="font-playfair font-bold text-3xl md:text-4xl mb-6 text-primary-azurite-blue-700">Digital Product design & development</h3>
-          <p class="font-montserrat text-lg md:text-xl text-black-grey leading-relaxed md:leading-relaxed lg:leading-relaxed">Crafting innovative solutions that combine trauma-informed principles with human-centered design practices.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-   <!-- testimonial -->
-   <section class="px-4 py-16 md:px-4 md:py-28 lg:px-8 lg:py-28 bg-secondary-chrysocolla-green-100">
-    <div class=" mx-auto ">
-      <!-- Section Header -->
-      <div class="text-center mb-16">
-        <h2 class="font-playfair font-black text-4xl md:text-5xl lg:text-5xl text-secondary-chrysocolla-green mb-4">Our partners' experiences</h2>
-        <p class="font-montserrat font-medium text-xl md:text-2xl text-secondary-rhodochrosite-rose-500 max-w-3xl mx-auto">
-          Hear from clients who've experienced the transformative power of trauma-informed design
-        </p>
-        <div class="mt-6">
-          <a>
-            <button class="border-2 border-primary-sunstone-orange bg-primary-sunstone-orange-100 hover:bg-primary-sunstone-orange-200 px-5 py-1 rounded-lg font-montserrat font-medium text-black-grey">
-              View our testimonies
-            </button>
-          </a>
-        </div>
-      </div>
-  
-      <!-- Testimonials Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <!-- Testimonial 1 -->
-        <div class="bg-white rounded-xl shadow-sm p-8 flex flex-col bg-primary-azurite-blue-200">
-          <div class="flex-grow">
-            <span class="text-6xl font-black text-primary-sunstone-orange-400">"</span>
-            <blockquote class="font-montserrat text-black-grey text-xl md:text-xl mb-4 leading-relaxed md:leading-relaxed lg:leading-relaxed">Their healing-centered approach transformed our digital space into a safe, inclusive environment that truly serves our community's needs."</blockquote>
-            <div class="mt-8">
-              <h3 class="font-montserrat font-semibold text-black-grey-800">Sarah Chen</h3>
-              <p class="text-black-grey-600">Nonprofit Director</p>
+    
+        <!-- Testimonials Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Testimonial 1 -->
+          <div class="bg-white rounded-xl shadow-sm p-8 flex flex-col bg-accent-selenite-white-200">
+            <div class="flex-grow">
+              <span class="text-6xl font-black text-primary-sunstone-orange-400">"</span>
+              <blockquote class="text-black-grey text-xl md:text-xl mb-4">Their healing-centered approach transformed our digital space into a safe, inclusive environment that truly serves our community's needs."</blockquote>
+              <div class="mt-8">
+                <h3 class="font-semibold text-black-grey-800">Sarah Chen</h3>
+                <p class="text-black-grey-600">Nonprofit Director</p>
+              </div>
             </div>
           </div>
-        </div>
-  
-        <!-- Testimonial 2 -->
-        <div class="bg-white rounded-xl shadow-sm p-8 flex flex-col bg-primary-azurite-blue-200">
-          <div class="flex-grow">
-            <span class="text-6xl font-black text-primary-sunstone-orange-400">"</span>
-            <blockquote class="font-montserrat text-black-grey text-xl md:text-xl mb-4 leading-relaxed md:leading-relaxed lg:leading-relaxed">Dr. G's Lab helped us create a trauma-sensitive platform that prioritizes psychological safety and emotional wellbeing."</blockquote>
-            <div class="mt-8">
-              <h3 class="font-montserrat font-semibold text-black-grey-800">Marcus Rodriguez</h3>
-              <p class="text-black-grey-600">Social Impact Startup Founder</p>
+    
+          <!-- Testimonial 2 -->
+          <div class="bg-white rounded-xl shadow-sm p-8 flex flex-col bg-accent-selenite-white-200">
+            <div class="flex-grow">
+              <span class="text-6xl font-black text-primary-sunstone-orange-400">"</span>
+              <blockquote class="text-black-grey text-xl md:text-xl mb-4">Dr. G's Lab helped us create a trauma-sensitive platform that prioritizes psychological safety and emotional wellbeing."</blockquote>
+              <div class="mt-8">
+                <h3 class="font-semibold text-black-grey-800">Marcus Rodriguez</h3>
+                <p class="text-black-grey-600">Social Impact Startup Founder</p>
+              </div>
             </div>
           </div>
-        </div>
-  
-        <!-- Testimonial 3 -->
-        <div class="bg-white rounded-xl shadow-sm p-8 flex flex-col bg-primary-azurite-blue-200">
-          <div class="flex-grow">
-            <span class="text-6xl font-black text-primary-sunstone-orange-400">"</span>
-            <blockquote class="font-montserrat text-black-grey text-xl md:text-xl mb-4 leading-relaxed md:leading-relaxed lg:leading-relaxed">Their commitment to equity and accessibility has made our digital services more inclusive and empowering for underserved communities."</blockquote>
-            <div class="mt-8">
-              <h3 class="font-montserrat font-semibold text-black-grey-800">Dr. Maya Patel</h3>
-              <p class="text-black-grey-600">Institution Director</p>
+    
+          <!-- Testimonial 3 -->
+          <div class="bg-white rounded-xl shadow-sm p-8 flex flex-col bg-accent-selenite-white-200">
+            <div class="flex-grow">
+              <span class="text-6xl font-black text-primary-sunstone-orange-400">"</span>
+              <blockquote class="text-black-grey text-xl md:text-xl mb-4">Their commitment to equity and accessibility has made our digital services more inclusive and empowering for underserved communities."</blockquote>
+              <div class="mt-8">
+                <h3 class="font-semibold text-black-grey-800">Dr. Maya Patel</h3>
+                <p class="text-black-grey-600">Institution Director</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+    
+
+    <section class="py-20 px-2">
+      <div class="mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          <!-- Left Column with SVG -->
+          <div class="w-full">
+            <img src="img/book-a-consultation.jpg" alt="Inclusive Design Banner" class="w-full h-auto rounded-md">
+          </div>
+          
+          <!-- Right Column with Content -->
+          <div class="space-y-8">
+            <h2 class="font-playfair font-black text-4xl md:text-5xl lg:text-5xl text-secondary-chrysocolla-green">Ready to make a difference?</h2>
+            
+            <p class="font-montserrat text-xl md:text-2xl text-secondary-rhodochrosite-rose-500">Join us in creating digital experiences that empower, heal, and inspire. Let's build a more inclusive digital world together.</p>
+            
+            <div>
+              <button type="submit" class="bg-primary-azurite-blue-600 font-montserrat text-[#ffff] text-xl px-12 py-4 rounded-lg border-b-4 border-b-primary-sunstone-orange font-medium hover:bg-primary-azurite-blue-700 transition-opacity">Book a Consultation</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
 
-  <!-- Call to Action CTA -->
-  <section class="bg-blue-600 px-4 py-16 md:px-4 md:py-28 lg:px-8 lg:py-28 bg-primary-azurite-blue-200">
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <h2 class="text-4xl md:text-5xl lg:text-5xl font-playfair text-secondary-chrysocolla-green font-black mb-4">Ready to get started?</h2>
-      <p class="font-montserrat text-lg md:text-xl lg:text-xl mb-8 leading-relaxed md:leading-relaxed lg:leading-relaxed">Let's create inclusive digital experiences together</p>
-      <a href="contact.html">
-        <button class="bg-primary-azurite-blue-600 font-montserrat text-xl text-blue-600 px-12 py-4 rounded-lg border-b-4 border-b-primary-sunstone-orange font-medium hover:bg-primary-azurite-blue-700 transition text-[#ffff]">
-          Schedule a Consultation
-        </button>
-      </a>
-    </div>
-  </section>
 
-  
+  </main>
 
   <!-- Footer section --> 
   <footer class="py-16 px-5 bg-accent-selenite-white-200">
