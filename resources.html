@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" />
-    <title>Contact</title>
+    <link rel="stylesheet" href="../style.css" />
+    <title>Resources</title>
 </head>
 <body class="bg-black-grey-50">
     <header>
@@ -13,7 +13,7 @@
                 <div class="relative flex items-center justify-between">
                     <!-- Logo -->
                     <a href="index.html" aria-label="Dr. G's Lab" title="Dr. G's Lab" class="inline-flex items-center">
-                        <img class="w-64" src="/img/dgl-logo.png" alt="Dr. G's Lab">
+                        <img class="w-64" src="/src/main/img/dgl-logo.png" alt="Dr. G's Lab">
                     </a>
     
                     <!-- Desktop Menu -->
@@ -74,138 +74,162 @@
         </div>
     </header>
 
-
+<!-- Resource Categories Section -->
+<section class="mx-auto px-4 py-16 md:px-4 md:py-28 lg:px-8 lg:py-28 bg-primary-azurite-blue-100/90">
     
-
-<!-- Consultation Form Section -->
- <section class="container mx-auto bg-blue-600 px-4 py-16 md:px-4 md:py-28 lg:px-8 lg:py-28 max-w-8xl">
-    <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-20">
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 gap-y-6 container mx-auto px-4 sm:px-6 lg:px-8">
+     
+        <!-- Category Card 1 -->
+      <div class="p-6 space-y-6">
+        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"><title>news</title><g fill="#212121" stroke-linecap="round" stroke-linejoin="round" transform="translate(0.5 0.5)"><line x1="24" y1="34" x2="52" y2="34" fill="none" stroke="#212121" stroke-width="1"></line><rect x="24" y="13" width="28" height="13" fill="none" stroke="#212121" stroke-width="1"></rect><line x1="52" y1="50" x2="24" y2="50" fill="none" stroke="#212121" stroke-width="1"></line><line x1="52" y1="42" x2="24" y2="42" fill="none" stroke="#212121" stroke-width="1"></line><path d="M11,36H4V54a6.018,6.018,0,0,0,6,6" fill="none" stroke="#212121" stroke-width="1"></path><path d="M16,4V54a6.018,6.018,0,0,1-6,6H54a6.018,6.018,0,0,0,6-6V4Z" fill="none" stroke="#212121" stroke-width="1"></path></g></svg>
+        <h3 class="text-4xl md:text-5xl lg:text-5xl font-playfair text-secondary-chrysocolla-green font-black mb-2">Blog</h3>
+        <p class="font-montserrat text-black-grey text-lg md:text-xl lg:text-xl leading-relaxed md:leading-relaxed lg:leading-relaxed">Weekly articles from industry leaders on trauma-informed design, featuring case studies and practical guides for creating psychologically safe digital experiences.</p>
         <div>
-           
-                <h2 class="text-4xl md:text-5xl lg:text-5xl font-playfair text-secondary-chrysocolla-green font-black mb-8">Let’s work together!</h2>
-                <p class="font-montserrat text-lg text-black-grey md:text-xl lg:text-xl mb-8 leading-relaxed md:leading-relaxed lg:leading-relaxed">Share a few details, and we’ll get back to you soon. Let’s create impactful designs together!</p>
-           
-    
-    <form class="space-y-6">
-      <!-- Name Field -->
-      <div>
-        <label for="name" class="block font-montserrat text-black-grey text-lg md:text-xl lg:text-xl leading-relaxed md:leading-relaxed lg:leading-relaxed0 mb-2">Name *</label>
-        <input type="text" id="name" required 
-          class="w-full h-12 px-4 rounded-lg border border-black-grey-700 focus:border-primary-sunstone-orange-600 focus:ring-4 focus:ring-primary-sunstone-orange/20 outline-none transition-all duration-200">
-      </div>
-  
-      <!-- Email Field -->
-      <div>
-        <label for="email" class="block font-montserrat text-black-grey text-lg md:text-xl lg:text-xl leading-relaxed md:leading-relaxed lg:leading-relaxed mb-2">Email Address *</label>
-        <input type="email" id="email" required 
-          class="w-full h-12 px-4 rounded-lg border border-black-grey-700 focus:border-primary-sunstone-orange-600 focus:ring-4 focus:ring-primary-sunstone-orange/20 outline-none transition-all duration-200">
-      </div>
-  
-      <!-- Phone Field -->
-      <div>
-        <label for="phone" class="block font-montserrat text-black-grey text-lg md:text-xl lg:text-xl leading-relaxed md:leading-relaxed lg:leading-relaxed mb-2">Phone</label>
-        <input type="tel" id="phone" 
-          class="w-full h-12 px-4 rounded-lg border border-black-grey-700 focus:border-primary-sunstone-orange-600 focus:ring-4 focus:ring-primary-sunstone-orange/20 outline-none transition-all duration-200">
-      </div>
-  
-      <!-- Services Dropdown -->
-      <div class="appearance-none">
-        <label for="services" class="block font-montserrat text-black-grey text-lg md:text-xl lg:text-xl leading-relaxed md:leading-relaxed lg:leading-relaxed mb-2">Services Needed *</label>
-        <select id="services" required 
-          class="appearance-auto w-full h-12 px-4 rounded-lg border border-black-grey-700 focus:border-primary-sunstone-orange-600 focus:ring-4 focus:ring-primary-sunstone-orange/20 outline-none transition-all duration-200">
-          <option value="">Select a service</option>
-          <option value="ux">UX Design</option>
-          <option value="research">User Research</option>
-          <option value="consulting">Design Consulting</option>
-        </select>
-      </div>
-  
-      <!-- Message Field -->
-      <div>
-        <label for="message" class="block font-montserrat text-black-grey text-lg md:text-xl lg:text-xl leading-relaxed md:leading-relaxed lg:leading-relaxed mb-2">Message/Project Details</label>
-        <textarea id="message" rows="4" 
-          class="w-full px-4 py-3 rounded-lg border border-black-grey-700 focus:border-primary-sunstone-orange-600 focus:ring-4 focus:ring-primary-sunstone-orange/20 outline-none transition-all duration-200"></textarea>
-      </div>
-  
-      <!-- Referral Source -->
-      <div>
-        <label for="referral" class="block font-montserrat text-black-grey text-lg md:text-xl lg:text-xl leading-relaxed md:leading-relaxed lg:leading-relaxed mb-2">How did you hear about us?</label>
-        <select id="referral" 
-          class="w-full h-12 px-4 rounded-lg border border-black-grey-700 focus:border-primary-sunstone-orange-600 focus:ring-4 focus:ring-primary-sunstone-orange/20 outline-none transition-all duration-200">
-          <option value="">Select an option</option>
-          <option value="search">Search Engine</option>
-          <option value="social">Social Media</option>
-          <option value="referral">Personal Referral</option>
-          <option value="other">Other</option>
-        </select>
-      </div>
-  
-      <!-- Submit Button -->
-      <div>
-        <button class="bg-primary-azurite-blue-600 font-montserrat text-xl text-blue-600 px-12 py-4 rounded-lg border-b-4 border-b-primary-sunstone-orange font-medium hover:bg-primary-azurite-blue-700 transition text-black-grey-50 w-full lg:w-auto">
-            Schedule a Consultation
-          </button>
-      </div>
-    </form>
-        </div>
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-4xl md:text-5xl lg:text-5xl font-playfair text-secondary-chrysocolla-green font-black mb-8">Get in touch</h2>
-            
-            <div>
-              <!-- Contact Information -->
-              <div class="space-y-6">
-                <div class="flex items-center space-x-4 font-montserrat text-lg">
-                  <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
-                  </svg>
-                  <address class="not-italic font-montserrat text-black-grey text-lg md:text-xl lg:text-xl leading-relaxed md:leading-relaxed lg:leading-relaxed">188 Marietta Dr, San Francisco, CA 94127</address>
-                </div>
-        
-                <div class="flex items-center space-x-4 font-montserrat text-lg">
-                  <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-                  </svg>
-                  <a href="mailto:hello@drgslab.com" class="text-secondary-chrysocolla-green font-montserrat text-lg md:text-xl lg:text-xl leading-relaxed md:leading-relaxed lg:leading-relaxed hover:text-opacity-80 transition-colors duration-200">hello@drgslab.com</a>
-                </div>
-        
-                <div class="flex items-center space-x-4 font-montserrat text-lg">
-                  <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
-                  </svg>
-                  <a href="tel:+1234567890" class=" font-montserrat  text-lg md:text-xl lg:text-xl leading-relaxed md:leading-relaxed lg:leading-relaxed text-secondary-chrysocolla-green hover:text-opacity-80 transition-colors duration-200">+1 (234) 567-890</a>
-                </div>
-        
-                <div class="flex items-center space-x-4 font-montserrat text-black-grey text-lg md:text-xl lg:text-xl leading-relaxed md:leading-relaxed lg:leading-relaxed">
-                  <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                  </svg>
-                  <div>
-                    <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
-                  </div>
-                </div>
-
-                <!-- Map -->
-              <div class="h-[300px] md:h-[400px] rounded-lg overflow-hidden">
-                <iframe 
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.67890!2d-73.123456!3d40.123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zM40zMDA!5e0!3m2!1sen!2sus!4v1234567890" 
-                  width="100%" 
-                  height="100%" 
-                  style="border:0;" 
-                  allowfullscreen="" 
-                  loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-              </div>
-              </div>
-              
-              
-              
-            </div>
+            <a href="project-case-study.html">
+              <button class="border-2 border-primary-sunstone-orange bg-primary-sunstone-orange-100 hover:bg-primary-sunstone-orange-200 px-5 py-1 rounded-lg font-montserrat font-medium text-black-grey">
+                Read our blog
+              </button>
+            </a>
           </div>
-    </div>
- </section>
+      </div>
+
+     
+        <!-- Category Card 2 -->
+      <div class=" p-6  space-y-6 ">
+        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"><title>podcast-mic</title><g fill="#212121" stroke-linecap="round" stroke-linejoin="round" transform="translate(0.5 0.5)"><rect x="22" y="4" width="20" height="44" rx="6" fill="none" stroke="#212121" stroke-width="1"></rect><line x1="22" y1="14" x2="26" y2="14" fill="none" stroke="#212121" stroke-width="1"></line><line x1="38" y1="14" x2="42" y2="14" fill="none" stroke="#212121" stroke-width="1"></line><line x1="22" y1="30" x2="26" y2="30" fill="none" stroke="#212121" stroke-width="1"></line><line x1="38" y1="30" x2="42" y2="30" fill="none" stroke="#212121" stroke-width="1"></line><line x1="22" y1="38" x2="26" y2="38" fill="none" stroke="#212121" stroke-width="1"></line><line x1="38" y1="38" x2="42" y2="38" fill="none" stroke="#212121" stroke-width="1"></line><line x1="22" y1="22" x2="26" y2="22" fill="none" stroke="#212121" stroke-width="1"></line><line x1="38" y1="22" x2="42" y2="22" fill="none" stroke="#212121" stroke-width="1"></line><line x1="36" y1="48" x2="36" y2="60" fill="none" stroke="#212121" stroke-width="1"></line><line x1="28" y1="48" x2="28" y2="60" fill="none" stroke="#212121" stroke-width="1"></line><path d="M13.515,17.515a12,12,0,0,0,0,16.97" fill="none" stroke="#212121" stroke-width="1"></path><path d="M7.858,11.858a20,20,0,0,0,0,28.284" fill="none" stroke="#212121" stroke-width="1"></path><path d="M50.485,17.523a12,12,0,0,1,0,16.971" fill="none" stroke="#212121" stroke-width="1"></path><path d="M56.142,11.867a20,20,0,0,1,0,28.284" fill="none" stroke="#212121" stroke-width="1"></path></g></svg>
+        <h3 class="text-4xl md:text-5xl lg:text-5xl font-playfair text-secondary-chrysocolla-green font-black mb-2">Podcast</h3>
+        <p class="font-montserrat text-black-grey text-lg md:text-xl lg:text-xl leading-relaxed md:leading-relaxed lg:leading-relaxed">Interviews with trauma specialists, UX designers, and community leaders exploring healing-centered experiences and real-world applications.</p>
+        <div>
+            <a href="project-case-study.html">
+              <button class="border-2 border-primary-sunstone-orange bg-primary-sunstone-orange-100 hover:bg-primary-sunstone-orange-200 px-5 py-1 rounded-lg font-montserrat font-medium text-black-grey">
+                Listen to our podcast
+              </button>
+            </a>
+          </div>
+      </div>
   
+      <!-- Category Card 3 -->
+      <div class="p-6 space-y-6">
+        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"><title>launch-app</title><g fill="#212121" stroke-linecap="round" stroke-linejoin="round" transform="translate(0.5 0.5)"><line x1="32" y1="32" x2="59" y2="5" fill="none" stroke="#212121" stroke-width="1"></line><polyline points="36.999 5 59 5 59 26.999" fill="none" stroke="#212121" stroke-width="1"></polyline><path d="M25,5H10a5,5,0,0,0-5,5V54a5,5,0,0,0,5,5H54a5,5,0,0,0,5-5V39" fill="none" stroke="#212121" stroke-width="1"></path></g></svg>
+        <h3 class="text-4xl md:text-5xl lg:text-5xl font-playfair text-secondary-chrysocolla-green font-black mb-2">Reports & publications</h3>
+        <p class="font-montserrat text-black-grey text-lg md:text-xl lg:text-xl leading-relaxed md:leading-relaxed lg:leading-relaxed">Research-backed studies on inclusive design impact, including white papers and industry reports examining trauma-informed approaches.</p>
+        <div>
+            <a href="project-case-study.html">
+              <button class="border-2 border-primary-sunstone-orange bg-primary-sunstone-orange-100 hover:bg-primary-sunstone-orange-200 px-5 py-1 rounded-lg font-montserrat font-medium text-black-grey">
+                Read our reports
+              </button>
+            </a>
+          </div>
+      </div>
+  
+      <!-- Category Card 4 -->
+      <div class="p-6 space-y-6">
+        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"><title>configuration</title><g fill="#212121" stroke-linecap="round" stroke-linejoin="round" transform="translate(0.5 0.5)"><path d="M24.933,31.439l-2.324-2.725A12.972,12.972,0,0,1,4.492,13.492l6.739,6.739,9-9L13.492,4.492A12.975,12.975,0,0,1,28.714,22.609L32,25.412" fill="none" stroke="#212121" stroke-width="1"></path><path d="M43.474,35.2,58.588,48.089a4,4,0,0,1,.24,5.879l-4.86,4.86a4,4,0,0,1-5.879-.24l-12.277-14.4" fill="none" stroke="#212121" stroke-width="1"></path><path d="M59.508,13.492l-6.739,6.739-9-9,6.739-6.739A12.975,12.975,0,0,0,35.286,22.609L5.412,48.089a4,4,0,0,0-.24,5.879l4.86,4.86a4,4,0,0,0,5.879-.24l25.48-29.874A12.972,12.972,0,0,0,59.508,13.492Z" fill="none" stroke="#212121" stroke-width="1"></path></g></svg>
+        <h3 class="text-4xl md:text-5xl lg:text-5xl font-playfair text-secondary-chrysocolla-green font-black mb-2">UX tool kits & templates</h3>
+        <p class="font-montserrat text-black-grey text-lg md:text-xl lg:text-xl leading-relaxed md:leading-relaxed lg:leading-relaxed">Customizable wireframes, research guidelines, and design components incorporating trauma-informed principles.</p>
+        
+        <div>
+            <a href="project-case-study.html">
+              <button class="border-2 border-primary-sunstone-orange bg-primary-sunstone-orange-100 hover:bg-primary-sunstone-orange-200 px-5 py-1 rounded-lg font-montserrat font-medium text-black-grey">
+                Download our
+              </button>
+            </a>
+          </div>
+      </div>
+    </div>
+  </section>
+    
+
+  
+  <!-- Resource Library Section -->
+<section class="container mx-auto px-4 py-16 md:px-4 md:py-28 lg:px-8 lg:py-28">
+    <div class="flex flex-col lg:flex-row gap-8">
+      <!-- Filter Sidebar -->
+      <aside class="w-full lg:w-1/4 bg-gray-50 p-6 rounded-lg">
+        <h3 class="text-2xl font-playfair text-secondary-chrysocolla-green font-bold mb-4">Filter Resources</h3>
+        
+        <!-- Search Bar -->
+        <div class="mb-6">
+          <input type="search" 
+                 class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-secondary-chrysocolla-green" 
+                 placeholder="Search resources...">
+        </div>
+  
+        <!-- Filter Categories -->
+        <div class="space-y-4">
+          <div class="flex items-center space-x-2 text-sm text-gray-600 hover:text-secondary-chrysocolla-green">
+            <input type="checkbox" id="trauma-informed">
+            <label for="trauma-informed">Trauma-Informed Design</label>
+          </div>
+          <div class="flex items-center space-x-2 text-sm text-gray-600 hover:text-secondary-chrysocolla-green">
+            <input type="checkbox" id="healing-centered">
+            <label for="healing-centered">Healing-Centered UX</label>
+          </div>
+          <div class="flex items-center space-x-2 text-sm text-gray-600 hover:text-secondary-chrysocolla-green">
+            <input type="checkbox" id="inclusive-design">
+            <label for="inclusive-design">Inclusive Design</label>
+          </div>
+          <div class="flex items-center space-x-2 text-sm text-gray-600 hover:text-secondary-chrysocolla-green">
+            <input type="checkbox" id="accessibility">
+            <label for="accessibility">Accessibility</label>
+          </div>
+        </div>
+      </aside>
+  
+      <!-- Resource Grid -->
+      <div class="w-full lg:w-3/4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Resource Card 1 -->
+          <article class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
+            <img src="resource-1.jpg" alt="Trauma-Informed Design Guide" class="w-full aspect-video object-cover">
+            <div class="p-6 space-y-4">
+              <h3 class="text-xl font-playfair text-secondary-chrysocolla-green font-bold">Trauma-Informed Design Guide</h3>
+              <p class="font-montserrat text-black-grey">Comprehensive guide for creating safe digital spaces through trauma-informed design principles.</p>
+              <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1 bg-secondary-chrysocolla-green/10 text-secondary-chrysocolla-green text-sm rounded-full">Guide</span>
+                <span class="px-3 py-1 bg-secondary-chrysocolla-green/10 text-secondary-chrysocolla-green text-sm rounded-full">Trauma-Informed</span>
+              </div>
+            </div>
+          </article>
+  
+          <!-- Resource Card 2 -->
+          <article class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
+            <img src="resource-2.jpg" alt="Healing-Centered UX Toolkit" class="w-full aspect-video object-cover">
+            <div class="p-6 space-y-4">
+              <h3 class="text-xl font-playfair text-secondary-chrysocolla-green font-bold">Healing-Centered UX Toolkit</h3>
+              <p class="font-montserrat text-black-grey">Essential tools and templates for implementing healing-centered design practices.</p>
+              <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1 bg-secondary-chrysocolla-green/10 text-secondary-chrysocolla-green text-sm rounded-full">Toolkit</span>
+                <span class="px-3 py-1 bg-secondary-chrysocolla-green/10 text-secondary-chrysocolla-green text-sm rounded-full">UX Design</span>
+              </div>
+            </div>
+          </article>
+  
+          <!-- Resource Card 3 -->
+          <article class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
+            <img src="resource-3.jpg" alt="Inclusive Design Patterns" class="w-full aspect-video object-cover">
+            <div class="p-6 space-y-4">
+              <h3 class="text-xl font-playfair text-secondary-chrysocolla-green font-bold">Inclusive Design Patterns</h3>
+              <p class="font-montserrat text-black-grey">Collection of proven design patterns that prioritize inclusivity and accessibility.</p>
+              <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1 bg-secondary-chrysocolla-green/10 text-secondary-chrysocolla-green text-sm rounded-full">Patterns</span>
+                <span class="px-3 py-1 bg-secondary-chrysocolla-green/10 text-secondary-chrysocolla-green text-sm rounded-full">Inclusive</span>
+              </div>
+            </div>
+          </article>
+        </div>
+  
+        <!-- Load More Button -->
+        <div class="mt-8 text-center">
+          <button class="bg-secondary-chrysocolla-green text-white px-6 py-2 rounded-lg hover:bg-opacity-90 transition-colors">
+            Load More Resources
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
 
 
 <!-- Footer section --> 
