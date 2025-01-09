@@ -787,12 +787,12 @@ video {
   display: none;
 }
 
-.aspect-video{
-  aspect-ratio: 16 / 9;
-}
-
 .aspect-square{
   aspect-ratio: 1 / 1;
+}
+
+.aspect-video{
+  aspect-ratio: 16 / 9;
 }
 
 .h-12{
@@ -845,6 +845,10 @@ video {
 
 .h-\[500px\]{
   height: 500px;
+}
+
+.h-auto{
+  height: auto;
 }
 
 .h-full{
@@ -901,6 +905,10 @@ video {
 
 .w-full{
   width: 100%;
+}
+
+.w-10{
+  width: 2.5rem;
 }
 
 .max-w-3xl{
@@ -1267,6 +1275,11 @@ video {
   border-color: rgb(211 136 100 / var(--tw-border-opacity, 1));
 }
 
+.border-primary-sunstone-orange-300{
+  --tw-border-opacity: 1;
+  border-color: rgb(224 175 145 / var(--tw-border-opacity, 1));
+}
+
 .border-b-primary-sunstone-orange{
   --tw-border-opacity: 1;
   border-bottom-color: rgb(206 119 85 / var(--tw-border-opacity, 1));
@@ -1326,6 +1339,11 @@ video {
   background-color: rgb(246 233 222 / var(--tw-bg-opacity, 1));
 }
 
+.bg-primary-sunstone-orange-300{
+  --tw-bg-opacity: 1;
+  background-color: rgb(224 175 145 / var(--tw-bg-opacity, 1));
+}
+
 .bg-primary-sunstone-orange-400{
   --tw-bg-opacity: 1;
   background-color: rgb(211 136 100 / var(--tw-bg-opacity, 1));
@@ -1370,10 +1388,6 @@ video {
 
 .bg-gradient-to-br{
   background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
-}
-
-.bg-gradient-to-l{
-  background-image: linear-gradient(to left, var(--tw-gradient-stops));
 }
 
 .bg-gradient-to-r{
@@ -1426,12 +1440,6 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
-.from-secondary-chrysocolla-green-200{
-  --tw-gradient-from: #b7eae9 var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(183 234 233 / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
 .via-accent-selenite-white-100{
   --tw-gradient-to: rgb(246 240 233 / 0)  var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), #f6f0e9 var(--tw-gradient-via-position), var(--tw-gradient-to);
@@ -1445,11 +1453,6 @@ video {
 .via-secondary-rhodochrosite-rose-50{
   --tw-gradient-to: rgb(251 247 245 / 0)  var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), #fbf7f5 var(--tw-gradient-via-position), var(--tw-gradient-to);
-}
-
-.via-primary-azurite-blue-50{
-  --tw-gradient-to: rgb(240 249 251 / 0)  var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), #f0f9fb var(--tw-gradient-via-position), var(--tw-gradient-to);
 }
 
 .to-accent-selenite-white-100{
@@ -1543,6 +1546,11 @@ video {
 .py-1{
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
+}
+
+.py-10{
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .py-12{

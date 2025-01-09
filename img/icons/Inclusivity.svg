@@ -14,13 +14,13 @@
         fill: none;
         stroke: #d4a18c;
         stroke-miterlimit: 10;
-        stroke-width: 2.18px;
+        stroke-width: 2.74px;
       }
     </style>
   </defs>
-  <circle class="cls-3" cx="48" cy="48" r="32"/>
-  <circle class="cls-2" cx="16" cy="48" r="16"/>
-  <circle class="cls-1" cx="48" cy="80" r="16"/>
-  <circle class="cls-1" cx="48" cy="16" r="16"/>
-  <circle class="cls-2" cx="80" cy="48" r="16"/>
+  <circle class="cls-3" cx="48" cy="48" r="31.33"/>
+  <circle class="cls-2" cx="16.67" cy="48" r="15.67"/>
+  <circle class="cls-1" cx="48" cy="79.33" r="15.67"/>
+  <circle class="cls-1" cx="48" cy="16.67" r="15.67"/>
+  <circle class="cls-2" cx="79.33" cy="48" r="15.67"/>
 </svg>
