@@ -81,44 +81,82 @@
   </div>
   </header>
 
-   <!-- Hero section -->
-   <section class="mx-auto px-4 py-16 md:px-4 md:py-28 lg:px-8 lg:py-28">
-    
-    <div class="grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12 gap-9 items-center">
-      
-      <!-- Hero content -->
+    <!-- Hero section -->
+  <section class="mx-auto px-4 py-16 md:px-4 md:py-28 lg:px-8 lg:py-16">
+    <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-12 gap-9 items-center">
+      <!-- Left Column - Hero Content -->
       <div class="col-span-4 md:col-span-4 lg:col-span-6">
-          <div class="space-y-4">
-            <h1 class="font-playfair font-black text-5xl md:text-6xl lg:text-6xl text-secondary-chrysocolla-green">Transforming digital experiences through Trauma-informed design</h1>
-            <p class="font-montserrat text-xl md:text-2xl lg:text-2xl text-black-grey text-opacity-85">
-              Empowering organizations and startups to create healing-centered digital spaces that nurture trust, safety, and meaningful connections for vulnerable communities.
-            </p>
-            <div class="pt-2">
-              <a href="about.html">
-                <button class="border-2 border-primary-sunstone-orange bg-primary-sunstone-orange-100 hover:bg-primary-sunstone-orange-200 px-5 py-1 rounded-lg font-montserrat font-medium text-black-grey">Learn about our mission</button>
-              </a>
-            </div>
+        <div class="space-y-4">
+          <h1 class="font-playfair font-black text-5xl md:text-5xl lg:text-6xl text-secondary-chrysocolla-green">
+            Transforming digital experiences through Trauma-informed design
+          </h1>
+          <p class="font-montserrat text-lg md:text-2xl lg:text-2xl text-black-grey text-opacity-85">
+            Empowering organizations and startups to create healing-centered
+            digital spaces that nurture trust, safety, and meaningful connections
+            for vulnerable communities.
+          </p>
+          <div class="pt-2">
+            <a href="about.html">
+              <button class="border-2 border-primary-sunstone-orange bg-primary-sunstone-orange-100 hover:bg-primary-sunstone-orange-200 px-5 py-1 rounded-lg font-montserrat font-medium text-black-grey">
+                Learn about our mission
+              </button>
+            </a>
           </div>
-      </div>
-      
-      <!-- Right Column -->
-      <div class="relative aspect-video w-full col-span-4 md:col-span-4 lg:col-span-6">
-        <div class="w-full h-full rounded-lg overflow-hidden">
-          <video
-            class="w-full h-full object-cover rounded-xl"
-            autoplay
-            loop
-            muted
-            playsinline
-          >
-            <source src="img/DGL-web-video.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
         </div>
       </div>
-      
-  </div>
+  
+      <!-- Right Column - Animated SVG -->
+      <div class="relative h-full col-span-5 md:col-span-4 lg:col-span-6">
+        <div class="aspect-square w-full">
+          <div class="absolute inset-0">
+            <svg width="100%" height="100%" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+              <!-- Enhanced Wave Patterns -->
+              <path class="text-secondary-chrysocolla-green-500" fill="none" stroke="currentColor" stroke-width="3" opacity="0.3">
+                <animate attributeName="d" 
+                  values="M0,400 Q250,350 500,400 T1000,400;
+                          M0,400 Q250,450 500,400 T1000,400;
+                          M0,400 Q250,350 500,400 T1000,400"
+                  dur="15s" repeatCount="indefinite"/>
+              </path>
+              <path class="text-secondary-chrysocolla-green-600" fill="none" stroke="currentColor" stroke-width="2" opacity="0.2">
+                <animate attributeName="d" 
+                  values="M0,600 Q250,550 500,600 T1000,600;
+                          M0,600 Q250,650 500,600 T1000,600;
+                          M0,600 Q250,550 500,600 T1000,600"
+                  dur="20s" repeatCount="indefinite"/>
+              </path>
+  
+              <!-- Larger Floating Elements -->
+              <circle cx="30%" cy="30%" r="40" class="fill-secondary-rhodochrosite-rose-600" opacity="0.2">
+                <animate attributeName="cy" values="30%;40%;30%" dur="12s" repeatCount="indefinite"/>
+                <animate attributeName="r" values="40;45;40" dur="8s" repeatCount="indefinite"/>
+              </circle>
+              <circle cx="70%" cy="60%" r="50" class="fill-primary-sunstone-orange-600" opacity="0.15">
+                <animate attributeName="cy" values="60%;50%;60%" dur="15s" repeatCount="indefinite"/>
+                <animate attributeName="r" values="50;55;50" dur="10s" repeatCount="indefinite"/>
+              </circle>
+  
+              <!-- Enhanced Gradient Background -->
+              <defs>
+                <linearGradient id="enhancedGradient" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#fbf7f5" stop-opacity="0.9"/>
+                  <stop offset="50%" stop-color="#f7ede9" stop-opacity="0.6"/>
+                  <stop offset="100%" stop-color="#f0fbfb" stop-opacity="0.4"/>
+                </linearGradient>
+              </defs>
+              
+              <!-- Larger Central Pulse -->
+              <circle cx="60%" cy="40%" r="300" fill="url(#enhancedGradient)" opacity="0.5">
+                <animate attributeName="r" values="300;330;300" dur="12s" repeatCount="indefinite"/>
+                <animate attributeName="opacity" values="0.8;0.4;0.5" dur="12s" repeatCount="indefinite"/>
+              </circle>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
+   
 
      <!-- Services section -->
      <section class="px-4 py-16 md:px-4 md:py-28 lg:px-8 lg:py-28 bg-gradient-to-r from-secondary-chrysocolla-green-50 to-primary-azurite-blue-50">

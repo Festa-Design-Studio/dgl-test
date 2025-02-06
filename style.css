@@ -644,6 +644,10 @@ video {
   grid-column: span 6 / span 6;
 }
 
+.col-span-5{
+  grid-column: span 5 / span 5;
+}
+
 .m-10{
   margin: 2.5rem;
 }
@@ -1469,6 +1473,34 @@ video {
   --tw-gradient-to: #d9f4f2 var(--tw-gradient-to-position);
 }
 
+.fill-secondary-rhodochrosite-rose-100{
+  fill: #f7ede9;
+}
+
+.fill-primary-azurite-blue-100{
+  fill: #daeff3;
+}
+
+.fill-secondary-rhodochrosite-rose-500{
+  fill: #c5876e;
+}
+
+.fill-primary-azurite-blue-600{
+  fill: #30718a;
+}
+
+.fill-secondary-rhodochrosite-rose-600{
+  fill: #af6e53;
+}
+
+.fill-primary-azurite-blue-300{
+  fill: #89c7d7;
+}
+
+.fill-primary-sunstone-orange-600{
+  fill: #bc563a;
+}
+
 .object-cover{
   -o-object-fit: cover;
      object-fit: cover;
@@ -1764,6 +1796,46 @@ video {
 
 .text-secondary-chrysocolla-green-700\/90{
   color: rgb(42 110 116 / 0.9);
+}
+
+.text-secondary-chrysocolla-green-100{
+  --tw-text-opacity: 1;
+  color: rgb(217 244 242 / var(--tw-text-opacity, 1));
+}
+
+.text-secondary-chrysocolla-green-200{
+  --tw-text-opacity: 1;
+  color: rgb(183 234 233 / var(--tw-text-opacity, 1));
+}
+
+.text-secondary-chrysocolla-green-300{
+  --tw-text-opacity: 1;
+  color: rgb(134 218 217 / var(--tw-text-opacity, 1));
+}
+
+.text-secondary-chrysocolla-green-700{
+  --tw-text-opacity: 1;
+  color: rgb(42 110 116 / var(--tw-text-opacity, 1));
+}
+
+.text-secondary-chrysocolla-green-600{
+  --tw-text-opacity: 1;
+  color: rgb(44 136 142 / var(--tw-text-opacity, 1));
+}
+
+.text-primary-azurite-blue{
+  --tw-text-opacity: 1;
+  color: rgb(22 42 54 / var(--tw-text-opacity, 1));
+}
+
+.text-secondary-chrysocolla-green-800{
+  --tw-text-opacity: 1;
+  color: rgb(41 91 97 / var(--tw-text-opacity, 1));
+}
+
+.text-secondary-chrysocolla-green-500{
+  --tw-text-opacity: 1;
+  color: rgb(50 167 168 / var(--tw-text-opacity, 1));
 }
 
 .text-opacity-85{
