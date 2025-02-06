@@ -1838,6 +1838,11 @@ video {
   color: rgb(50 167 168 / var(--tw-text-opacity, 1));
 }
 
+.text-primary-sunstone-orange-600{
+  --tw-text-opacity: 1;
+  color: rgb(188 86 58 / var(--tw-text-opacity, 1));
+}
+
 .text-opacity-85{
   --tw-text-opacity: 0.85;
 }
